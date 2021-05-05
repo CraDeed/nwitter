@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nwitter/static/css/main.1270d326.chunk.css",
-    "main.js": "/nwitter/static/js/main.043c74b9.chunk.js",
-    "main.js.map": "/nwitter/static/js/main.043c74b9.chunk.js.map",
-    "runtime-main.js": "/nwitter/static/js/runtime-main.ca6c8d59.js",
-    "runtime-main.js.map": "/nwitter/static/js/runtime-main.ca6c8d59.js.map",
-    "static/js/2.6df4450d.chunk.js": "/nwitter/static/js/2.6df4450d.chunk.js",
-    "static/js/2.6df4450d.chunk.js.map": "/nwitter/static/js/2.6df4450d.chunk.js.map",
-    "static/js/3.13500d69.chunk.js": "/nwitter/static/js/3.13500d69.chunk.js",
-    "static/js/3.13500d69.chunk.js.map": "/nwitter/static/js/3.13500d69.chunk.js.map",
+    "main.css": "/nwitter/static/css/main.fc44e49c.chunk.css",
+    "main.js": "/nwitter/static/js/main.eec35ab6.chunk.js",
+    "main.js.map": "/nwitter/static/js/main.eec35ab6.chunk.js.map",
+    "runtime-main.js": "/nwitter/static/js/runtime-main.c8c8eafe.js",
+    "runtime-main.js.map": "/nwitter/static/js/runtime-main.c8c8eafe.js.map",
+    "static/js/2.bc424012.chunk.js": "/nwitter/static/js/2.bc424012.chunk.js",
+    "static/js/2.bc424012.chunk.js.map": "/nwitter/static/js/2.bc424012.chunk.js.map",
+    "static/js/3.f8a15361.chunk.js": "/nwitter/static/js/3.f8a15361.chunk.js",
+    "static/js/3.f8a15361.chunk.js.map": "/nwitter/static/js/3.f8a15361.chunk.js.map",
     "index.html": "/nwitter/index.html",
-    "static/css/main.1270d326.chunk.css.map": "/nwitter/static/css/main.1270d326.chunk.css.map",
-    "static/js/2.6df4450d.chunk.js.LICENSE.txt": "/nwitter/static/js/2.6df4450d.chunk.js.LICENSE.txt"
+    "static/css/main.fc44e49c.chunk.css.map": "/nwitter/static/css/main.fc44e49c.chunk.css.map",
+    "static/js/2.bc424012.chunk.js.LICENSE.txt": "/nwitter/static/js/2.bc424012.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca6c8d59.js",
-    "static/js/2.6df4450d.chunk.js",
-    "static/css/main.1270d326.chunk.css",
-    "static/js/main.043c74b9.chunk.js"
+    "static/js/runtime-main.c8c8eafe.js",
+    "static/js/2.bc424012.chunk.js",
+    "static/css/main.fc44e49c.chunk.css",
+    "static/js/main.eec35ab6.chunk.js"
   ]
 }

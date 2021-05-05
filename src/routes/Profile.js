@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { authService, dbService } from "../fbase";
 import { useHistory } from "react-router-dom";
 import "./Profile.scss";
+import Nweet from "../components/Nweet";
 
 const Profile = ({ refreshUser, userObj }) => {
     const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
+    const [myNweets, setMyNweets] = useState([]);
 
     const history = useHistory();
 
@@ -13,19 +15,22 @@ const Profile = ({ refreshUser, userObj }) => {
         history.push("/");
     };
 
-    // const getMyNweets = async () => {
-    //     const nweets = await dbService
-    //         .collection("nweets")
-    //         .where("creatorId", "==", userObj.uid)
-    //         .orderBy("createAt")
-    //         .get();
+    useEffect(() => {
+        const getMyNweets = async () => {
+            const nweets = await dbService
+                .collection("nweets")
+                .where("creatorId", "==", userObj.uid)
+                .orderBy("createAt")
+                .get();
 
-    //     console.log(nweets.docs.map((doc) => doc.data()));
-    // };
-
-    // useEffect(() => {
-    //     getMyNweets();
-    // }, []);
+            const nweetArray = nweets.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data(),
+            }));
+            setMyNweets(nweetArray);
+        };
+        getMyNweets();
+    }, [userObj.uid]);
 
     const onChange = (e) => {
         const {
@@ -59,13 +64,22 @@ const Profile = ({ refreshUser, userObj }) => {
                 />
                 <input
                     type="submit"
-                    value="Update Profile"
+                    value="Change NickName"
                     className="formBtn"
                     style={{
                         marginTop: 10,
                     }}
                 />
             </form>
+            <div style={{ marginTop: 30 }}>
+                {myNweets.map((nweet) => (
+                    <Nweet
+                        key={nweet.id}
+                        nweetObj={nweet}
+                        isOwner={nweet.creatorId === userObj.uid}
+                    />
+                ))}
+            </div>
             <span className="formBtn cancelBtn logOut" onClick={onLogOutClick}>
                 Log Out
             </span>

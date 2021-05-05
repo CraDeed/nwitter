@@ -10,6 +10,7 @@ const Home = ({ userObj }) => {
     useEffect(() => {
         const getData = dbService
             .collection("nweets")
+            .orderBy("createAt", "desc")
             .onSnapshot((snapshot) => {
                 const nweetArray = snapshot.docs.map((doc) => ({
                     id: doc.id,

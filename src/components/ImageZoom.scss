@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.topheader {
+    height: 44px;
+    background: white;
+    position: relative;
+    padding: 0;
+    text-align: center;
+
+    & h1 {
+        margin: 0;
+        font-size: 17px;
+        color: #333;
+        line-height: 44px;
+    }
+
+    & button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 15px;
+        line-height: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.imageback {
+    height: calc(100% - 44px);
+    background: rgba($color: #090909, $alpha: 0.9);
+    text-align: center;
+}
+
+.nav {
+    margin-top: 30px;
+    max-height: 500px;
+}
